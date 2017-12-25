@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calendar Web App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Official Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <!-- Our project CSS -->
+    <link rel="stylesheet" href="calendar.css">
+</head>
+
+<body>
+    <br />
+    <div class="container">
+
+        <div class="row">
+
+            <div id="calculator" class="col-sm-3 panel">
+                <h3>APRIL 2017</h3> 
+                <h3></h3>
+                <h3>26  27  28  29  30  31   1</h3>
+                <h3> 2   3   4   5   6   7   8</h3>
+                <h3> 9  10  11  12  13  14  15</h3>
+                <h3>16  17  18  19  20  21  22</h3>
+                <h3>23  24  25  26  27  28  29</h3>
+                <h3>30   1   2   3   4   5   6</h3>
+
+
+                <form>
+                    <p>How much was the bill?</p>
+                    <input type="number"  id="bill" class="form-control ">
+                    <select id="service">
+                    <option selected="selected">-- Choose an option --</option>
+                    <option value="1">30% - Outstanding</option>
+                    <option value="2">20% - Good</option>
+                    <option value="3">15% - It was ok</option>
+                    <option value="4">10% - Bad</option>
+                    <option value="5">5% - Terrible</option>
+                     </select>
+
+                    <p>How many people sharing the bill?</p>
+                    <input type="text" id="sharing" maxlength="1">
+
+                    <button type="button" id="add">Calculate</button>
+                    <button type="reset" id="clear">Clear</button>
+                </form>
+
+                <h2 id="display"></h2>
+
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Official JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Official Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
+    <!-- Our project JS -->
+    <script src="calendar.js"></script>
+
+</body>
+
+</html>

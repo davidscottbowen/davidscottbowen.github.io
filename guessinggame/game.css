@@ -1,0 +1,40 @@
+body{
+    background-color:  white;
+}
+
+.panel{
+    position:relative;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    background-position: center top;
+    height: 400px;
+    padding: 10;
+    color: black;
+    box-shadow: 0 0 30px black;
+    /*border: 10px solid black;*/
+    padding:35px;
+    background: lightslategray;
+    /*background-clip: content-box;*/
+
+}
+
+button {
+    color: black;
+}
+
+input {
+   margin: 15px;
+}
+
+p{
+    margin: 15px;
+}
+
+#service{
+    margin: 15px;
+}
+
+button{
+    margin: 15px;
+}
+

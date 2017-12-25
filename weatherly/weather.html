@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Weatherly</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="weather.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <br />
+<!--card one           -->
+            <div id="one" class="col-sm-3 onecard" padding-right: 5px>
+                <h3 class="top">Weatherly </h3>
+
+                <br />
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://www.google.com/">Google</a></li>
+                            <li><a href="https://www.yahoo.com/">Yahoo</a></li>
+                            <li class="fb-share-button" data-href="https://davidscottbowen.github.io/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdavidscottbowen.github.io%2F&amp;src=sdkpreparse">Share</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <h2 id="time" class="center"></h2>
+                <h3 id="location" class="center"></h3>
+                <p id="temps" class="temp" class="center"></p>
+
+                <h5 id="icon" class="center"></h5>
+                <h5 id="min"></h5>
+                <h5 id="rain"></h5>
+                <h5 id="max"></h5>
+                
+                <form>
+                    <input type="text" placeholder="Location" id="zip">
+                    <button type="button" id="add">Submit</button>
+                    <button type="button" id="another" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+                </form>
+            </div>
+
+<!--card 2-->
+            <div id="two" class="col-sm-3 col-sm-offset-1 onecard">
+                <h3 class="top">Weatherly </h3>
+
+                <br />
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://www.google.com/">Google</a></li>
+                            <li><a href="https://www.yahoo.com/">Yahoo</a></li>
+                            <li class="fb-share-button" data-href="https://davidscottbowen.github.io/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdavidscottbowen.github.io%2F&amp;src=sdkpreparse">Share</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <h2 id="time2" class="center"></h2>
+                <h3 id="location2" class="center"></h3>
+                <p id="temps2" class="temp" class="center"></p>
+
+                <h5 id="icon2" class="center"></h5>
+
+                     <h5 id="icon" class="center"></h5>
+                <h5 id="min2"></h5>
+                <h5 id="rain2"></h5>
+                <h5 id="max2"></h5>
+                <form>
+                    <input type="text" placeholder="Location" id="zip2">
+                    <button type="button" id="add2">Submit</button>
+                    <button type="button" id="another3" class="btn btn-default btn-xs">
+                       <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+                   <button type="button" id="minus2" class="btn btn-default btn-xs">
+                       <span class="glyphicon glyphicon-minus"></span>
+                   </button>
+                </form>
+            </div>
+
+<!--card 3-->
+            <div id="three" class="col-sm-3 col-sm-offset-1 onecard">
+                <h3 class="top">Weatherly </h3>
+
+                <br />
+                <nav class="navbar">
+                    <div class="container-fluid">
+                        <ul class="nav navbar-nav">
+                            <li><a href="https://www.google.com/">Google</a></li>
+                            <li><a href="https://www.yahoo.com/">Yahoo</a></li>
+                            <li class="fb-share-button" data-href="https://davidscottbowen.github.io/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdavidscottbowen.github.io%2F&amp;src=sdkpreparse">Share</a></li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <h2 id="time3" class="center"></h2>
+                <h3 id="location3" class="center"></h3>
+                <p id="temps3" class="temp" class="center"></p>
+
+                <h5 id="icon3" class="center"></h5>
+
+                     <h5 id="icon" class="center"></h5>
+                <h5 id="min3"></h5>
+                <h5 id="rain3"></h5>
+                <h5 id="max3"></h5>
+
+                <form>
+                    <input type="text" placeholder="Location" id="zip3">
+                    <button type="button" id="add3">Submit</button>
+                    <button type="button" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+        <button type="button" id="minus3" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-minus"></span>
+        </button>
+                </form>
+            </div>
+
+        </div>
+
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+
+        <script src="weather.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+body{
+    background-color:  white;
+}
+
+.panel{
+    position:relative;
+    background-image: url("food.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    border-radius: 25px;
+    background-position: right;
+    height: 550px;
+    width: 350px;
+    padding: 10;
+    color: black;
+    box-shadow: 0 0 30px black;
+    border: 10px solid black;
+    padding:35px;
+
+}
+
+
+button {
+    color: black;
+}
+
+input {
+   margin: 10px;
+}
+
+p{
+    margin: 10px;
+}
+
+#service{
+    margin: 10px;
+}
+
+button{
+    margin: 10px;
+}
+

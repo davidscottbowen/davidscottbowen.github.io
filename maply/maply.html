@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Maply</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="maply.css">
+</head>
+
+<body>
+
+  <h1>
+    <center>Maply</center>
+  </h1>
+
+
+  <div class="container">
+
+    <div class="row">
+     
+      <!--card 1-->
+      <div id="map" class="col-sm-3 onecard" >
+       
+        <h3 class="top">
+          <center>Maply</center>
+        </h3>
+        <br />
+
+        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
+        
+        <p id="here"></p>
+
+        <form>
+          <input type="text" placeholder="Location" id="zip">
+          <button type="button" id="add">Submit</button>
+          <button type="button" id="another" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+        </form>
+      </div>
+
+      <!--card 2-->
+      <div id="map1" class="col-sm-3 col-sm-offset-1 onecard">
+        <h3 class="top">Maply </h3>
+
+        <br />
+
+
+
+        <h5 id="max2"></h5>
+        <form>
+          <input type="text" placeholder="Location" id="zip2">
+          <button type="button" id="add2">Submit</button>
+          <button type="button" id="another3" class="btn btn-default btn-xs">
+                       <span class="glyphicon glyphicon-plus"></span>
+                    </button>
+          <button type="button" id="minus2" class="btn btn-default btn-xs">
+                       <span class="glyphicon glyphicon-minus"></span>
+                   </button>
+        </form>
+      </div>
+
+      <!--card 3-->
+      <div id="map2" class="col-sm-3 col-sm-offset-1 onecard">
+        <h3 class="top">Maply</h3>
+
+        <br />
+
+
+        <form>
+          <input type="text" placeholder="Location" id="zip3">
+          <button type="button" id="add3">Submit</button>
+          <button type="button" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-plus"></span>
+        </button>
+          <button type="button" id="minus3" class="btn btn-default btn-xs">
+          <span class="glyphicon glyphicon-minus"></span>
+        </button>
+        </form>
+      </div>
+
+
+
+    </div>
+
+
+
+
+
+
+    <!--
+  <div id="map" style="width:50%;height:300px"></div>
+
+  <form>
+    <input type="text" placeholder="Zip Code" id="zip">
+    <button type="button" id="add">Submit</button>
+  </form>
+
+  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>-->
+
+    <!-- Official JQuery -->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+    <!-- Official Bootstrap -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+    <!-- Our project JS -->
+    <script src="maply.js"></script>
+    <!--callback=myMap-->
+
+</body>
+
+</html>
