@@ -24,7 +24,7 @@
 }
 .today {
     color: red;
-    background-color: aqua;
+    /*background-color: aqua;*/
 }
 /*Calendar Style End*/
 
@@ -54,4 +54,40 @@
   color: black;
 }
 /*Weatherly Style Stop*/
+
+/*TicTacToe Style Start*/
+.panel{
+    position:relative;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    background-position: center top;
+    height: 100px;
+    width: 70px;
+    color: black;
+    background: lightslategray;
+
+
+}
+
+button {
+    color: black;
+}
+
+input {
+   margin: 15px;
+}
+
+p{
+    margin: 15px;
+}
+
+#service{
+    margin: 15px;
+}
+
+button{
+    margin: 15px;
+}
+
+/*TicTacToe Style Stop*/
 

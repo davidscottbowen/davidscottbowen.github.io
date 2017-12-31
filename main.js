@@ -330,4 +330,241 @@ $(function () {
     $("button#minus3").click(function (ev) {
         $("#three").hide();
     });
+
+    //Weatherly End
+
+    //TicTcaToeStart
+    var turn = 1;
+    var array = [];
+    var win = 0;
+    var element;
+    var pos;
+    var boxes
+
+    function winner() {
+        if (array[0] == "x" && array[1] == "x" && array[2] == "x") {
+            win = 1;
+            boxes = 123;
+
+
+        } else if (array[0] == "o" && array[1] == "o" && array[2] == "o") {
+            win = 1;
+            boxes = 123;
+        }
+
+        if (array[3] == "x" && array[4] == "x" && array[5] == "x") {
+            win = 1;
+            boxes = 456;
+        } else
+
+            if (array[3] == "o" && array[4] == "o" && array[5] == "o") {
+                win = 1;
+                boxes = 456;
+            } else
+
+                if (array[6] == "x" && array[7] == "x" && array[8] == "x") {
+                    win = 1;
+                    boxes = 789;
+                } else
+
+                    if (array[6] == "o" && array[7] == "o" && array[8] == "o") {
+                        win = 1;
+                        boxes = 789;
+                    } else
+
+                        if (array[0] == "x" && array[3] == "x" && array[6] == "x") {
+                            win = 1;
+                            boxes = 147;
+                        }
+
+        if (array[0] == "o" && array[3] == "o" && array[6] == "o") {
+            win = 1;
+            boxes = 147;
+        } else
+
+            if (array[1] == "x" && array[4] == "x" && array[7] == "x") {
+                win = 1;
+                boxes = 258;
+            } else
+
+                if (array[1] == "o" && array[4] == "o" && array[7] == "o") {
+                    win = 1;
+                    boxes = 258;
+                } else
+
+                    if (array[2] == "x" && array[5] == "x" && array[8] == "x") {
+                        win = 1;
+                        boxes = 369;
+                    } else
+
+                        if (array[2] == "o" && array[5] == "o" && array[8] == "o") {
+                            win = 1;
+                            boxes = 369;
+                        }
+
+        if (array[0] == "x" && array[4] == "x" && array[8] == "x") {
+            win = 1;
+            boxes = 159;
+        }
+
+        if (array[0] == "o" && array[4] == "o" && array[8] == "o") {
+            win = 1;
+            boxes = 159;
+        }
+
+        if (array[2] == "x" && array[4] == "x" && array[6] == "x") {
+            win = 1;
+            boxes = 357;
+        }
+
+        if (array[2] == "o" && array[4] == "o" && array[6] == "o") {
+            win = 1;
+            boxes = 357;
+        }
+    }
+
+    function go() {
+        console.log("turn:  " + turn);
+        if (turn == 1) {
+            $(element).append("<img src = 'img/x.png' alt='X' height='50px'>");
+            array[pos] = "x";
+            turn = 2;
+
+
+        } else {
+            $(element).append("<img src = 'img/o.png' alt='X' height='50px'>")
+            array[pos] = "o";
+
+            turn = 1;
+
+        }
+        winner();
+        console.log("win:  " + win);
+        for (i = 0; i <= 8; i++) {
+            console.log("Array element : " + i + " = " + array[i]);
+        }
+        if (win == 1) {
+            color();
+
+        }
+
+    }
+
+    function color() {
+
+        if (boxes == 123) {
+            $('#ticone').css('background-color', 'yellow');
+            $('#tictwo').css('background-color', 'yellow');
+            $('#ticthree').css('background-color', 'yellow');
+        } else
+            if (boxes == 456) {
+                $('#ticfour').css('background-color', 'yellow');
+                $('#ticfive').css('background-color', 'yellow');
+                $('#ticsix').css('background-color', 'yellow');
+            } else
+                if (boxes == 789) {
+                    $('#ticseven').css('background-color', 'yellow');
+                    $('#ticeight').css('background-color', 'yellow');
+                    $('#ticnine').css('background-color', 'yellow');
+                } else
+                    if (boxes == 147) {
+                        $('#ticone').css('background-color', 'yellow');
+                        $('#ticfour').css('background-color', 'yellow');
+                        $('#ticseven').css('background-color', 'yellow');
+                    } else
+                        if (boxes == 258) {
+                            $('#tictwo').css('background-color', 'yellow');
+                            $('#ticfive').css('background-color', 'yellow');
+                            $('#ticeight').css('background-color', 'yellow');
+                        } else
+                            if (boxes == 369) {
+                                $('#ticthree').css('background-color', 'yellow');
+                                $('#ticsix').css('background-color', 'yellow');
+                                $('#ticnine').css('background-color', 'yellow');
+                            } else
+                                if (boxes == 159) {
+                                    $('#ticone').css('background-color', 'yellow');
+                                    $('#ticfive').css('background-color', 'yellow');
+                                    $('#ticnine').css('background-color', 'yellow');
+                                } else
+                                    if (boxes == 357) {
+                                        $('#ticthree').css('background-color', 'yellow');
+                                        $('#ticfive').css('background-color', 'yellow');
+                                        $('#ticseven').css('background-color', 'yellow');
+                                    }
+    }
+
+    $('#ticone').click(function () {
+        pos = 0;
+        element = "#ticone";
+        console.log("element:  " + element);
+        go();
+
+
+    });
+
+    $('#tictwo').click(function () {
+        pos = 1;
+        element = "#tictwo";
+        console.log(element);
+        go();
+
+    });
+
+    $('#ticthree').click(function () {
+        pos = 2;
+        element = "#ticthree";
+        console.log(element);
+        go();
+
+    });
+
+    $('#ticfour').click(function () {
+        pos = 3;
+        element = "#ticfour";
+        console.log(element);
+        go();
+
+    });
+
+    $('#ticfive').click(function () {
+        pos = 4;
+        element = "#ticfive";
+        console.log(element);
+        go();
+
+    });
+
+    $('#ticsix').click(function () {
+        pos = 5;
+        element = "#ticsix";
+        console.log(element);
+        go();
+
+    });
+
+    $('#ticseven').click(function () {
+        pos = 6;
+        element = "#ticseven";
+        console.log(element);
+        go();
+
+    });
+
+    $('#ticeight').click(function () {
+        pos = 7;
+        element = "#ticeight";
+        console.log(element);
+        go();
+
+    });
+
+    $('#ticnine').click(function () {
+        pos = 8;
+        element = "#ticnine";
+        console.log(element);
+        go();
+    });
+     //TicTcaToeStop
+
 });
