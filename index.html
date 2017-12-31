@@ -11,6 +11,7 @@
 
         gtag('config', 'UA-111564672-1');
     </script>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -22,16 +23,12 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">\
     <link href="css/freelancer.min.css" rel="stylesheet">
     <link href="styles.css" rel="stylesheet">
-
-
-
     <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
 
     <script type="text/javascript">
         function displayNextImage() {
-
             v = (v === map.length - 1) ? 0 : v + 1;
             document.getElementById("maps").src = map[v];
             w = (w === radio.length - 1) ? 0 : w + 1;
@@ -52,7 +49,7 @@
         }
 
         function startTimer() {
-            setInterval(displayNextImage, 6000);
+            setInterval(displayNextImage, 4000);
         }
 
         var map = [], v = -1;
@@ -147,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <img class="img-responsive img-circle" src="img/scott.jpg" height=1 00 width=1 00 alt="">
+                    <img class="img-responsive img-circle" src="img/scott.jpg" height= "100px" width= "100px" alt="">
                     <div class="intro-text">
                         <!--<span class="name typewriter">David Scott Bowen</span>-->
                         <span class="name">David Scott Bowen</span>
@@ -174,10 +171,10 @@
                 </center>
             </div>
 
-            <!-- Web Calendar Start -->
+            <!-- Web Apps Row Start -->
             <div class="row">
+                <!-- Web Calendar Start -->
                 <div class="col-sm-3 portfolio-item">
-
                     <div class="container">
                         <div class="row">
                             <div class="col-md-5">
@@ -304,65 +301,96 @@
                 </div>
                 <!-- Web Calendar End -->
 
-                <!-- Guessing game -->
-                <!--<div class="row">
+                <!-- Weatherly Begin -->
+                <div id="one" class="col-sm-3 onecard">
+                    <!--<h3 class="top">Weatherly </h3>-->
+                    <!--<nav class="navbar">
+                            <div class="container-fluid">
+                                <ul class="nav navbar-nav">
+                                    <li><a href="https://www.google.com/">Google</a></li>
+                                    <li><a href="https://www.yahoo.com/">Yahoo</a></li>
+                                    <li class="fb-share-button" data-href="https://davidscottbowen.github.io/" data-layout="button_count" data-size="large" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdavidscottbowen.github.io%2F&amp;src=sdkpreparse">Share</a></li>
+                                </ul>
+                            </div>
+                        </nav>-->
+
+                    <!--<h2 id="time" class="center"></h2>-->
+                    <h3 id="location" class="center">Paintsville, KY</h3>
+                    <p id="temps" class="temp" class="center">0<sup>o</sup> F</p>
+                    <h5 id="icon" class="center" ></h5>
+                    <h5 id="min">0<sup>o</sup>  F min</h5>
+                    <h5 id="rain">0% RAIN</h5>
+                    <h5 id="max">0<sup>o</sup>  F max</h5>
+
+                    <form class="zipform">
+                        <input type="text" placeholder="Location" id="zip">
+                        <button type="button" id="add">Submit</button>
+                    </form>
+                </div>
+                <!-- Weatherly End -->
+
+            </div>
+
+
+            <!-- Guessing game -->
+            <!--<div class="row">
 
                 <div class="col-sm-3 portfolio-item">-->
-                <!--<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
+            <!--<a href="#portfolioModal1" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>-->
-                <!--<h3>
+            <!--<h3>
                         <center>Guessing Game</center>
                     </h3>
                     <img src="img/portfolio/guessinggame.png" class="img-responsive" alt="">
                     </a>
                 </div>-->
 
-                <!-- Tip Calculator -->
+            <!-- Tip Calculator -->
 
-                <div class="col-sm-3 portfolio-item">
-                    <!--<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
+            <!--<div class="col-sm-3 portfolio-item">-->
+            <!--<a href="#portfolioModal2" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>-->
-                    <h3>
-                        <center>Tip Calculator</center>
-                    </h3>
-                    <img src="img/portfolio/tipcalculator.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+            <!--<h3>
+                            <center>Tip Calculator</center>
+                        </h3>
+                        <img src="img/portfolio/tipcalculator.png" class="img-responsive" alt="">
+                        </a>
+                    </div>-->
 
-                <!-- TicTacToe -->
+            <!-- TicTacToe -->
 
-                <div class="col-sm-3 portfolio-item">
-                    <!--<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
+            <!--<div class="col-sm-3 portfolio-item">-->
+            <!--<a href="#portfolioModal3" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>-->
-                    <h3>
-                        <center>Tic-Tac-Toe</center>
-                    </h3>
-                    <img src="img/portfolio/tictactoe.png" class="img-responsive" alt="">
-                    </a>
-                </div>
+            <!--<h3>
+                            <center>Tic-Tac-Toe</center>
+                        </h3>
+                        <img src="img/portfolio/tictactoe.png" class="img-responsive" alt="">
+                        </a>
+                    </div>-->
 
-                <!-- Weatherly -->
+            <!-- Weatherly -->
 
-                <div class="col-sm-3 portfolio-item">
-                    <!--<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
+            <!--<div class="col-sm-3 portfolio-item">-->
+            <!--<a href="#portfolioModal4" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
                                 <i class="fa fa-search-plus fa-3x"></i>
                             </div>
                         </div>-->
-                    <h3>
+            <!--<h3>
                         <center>Weatherly</center>
                     </h3>
                     <img src="img/portfolio/weatherly.png" class="img-responsive" alt="">
@@ -370,11 +398,11 @@
                 </div>
 
                 <div class="row">
-                </div>
+                </div>-->
 
 
-                <!-- Maply -->
-                <!--<div class="col-sm-3 portfolio-item">
+            <!-- Maply -->
+            <!--<div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal5" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -384,11 +412,11 @@
                         <img src="img/portfolio/maply.png" class="img-responsive" alt="">
                     </a>
                 </div>-->
-                <!-- End Maply -->
+            <!-- End Maply -->
 
-                <!-- FantasyFootball -->
+            <!-- FantasyFootball -->
 
-                <!--<div class="col-sm-3 portfolio-item">
+            <!--<div class="col-sm-3 portfolio-item">
                     <a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">
                         <div class="caption">
                             <div class="caption-content">
@@ -399,91 +427,86 @@
                     </a>
                 </div>-->
 
-                <div class="row">
-                    <center>
-                        <h3>iOS APPS</h3>
-                    </center>
-                </div>
-
-                <div class="row">
-                </div>
-
-
-                <!-- HUG -->
-                <div class="col-sm-3 portfolio-item">
-                    <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
-                    <!--<div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>-->
-                    <h3>
-                        <center>HUG</center>
-                    </h3>
-                    <center>
-                        <img id="imgs" src="img/HUG1.png" height=7 5% width=7 5% class="img1 img-responsive" alt="">
-                    </center>
-                    </a>
-                </div>
-                <!-- End HUG -->
-
-                <!-- FantasyFootball -->
-                <div class="col-sm-3 portfolio-item">
-                    <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
-                    <!--<div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>-->
-                    <h3>
-                        <center>Team Football</center>
-                    </h3>
-                    <center>
-                        <img id="footballs" src="img/football1.png" height=7 5% width=7 5% class="img-responsive" alt="">
-                    </center>
-                    </a>
-                </div>
-                <!-- End FantasyFootball -->
-
-                <!-- RadioBristol -->
-                <div class="col-sm-3 portfolio-item">
-                    <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
-                    <!--<div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>-->
-                    <h3>
-                        <center>Radio Bristol</center>
-                    </h3>
-                    <center>
-                        <img id="radios" src="img/radio1.png" height=7 5% width=7 5% class="img-responsive" alt="">
-                    </center>
-                    </a>
-                </div>
-                <!-- End RadioBristol -->
-
-                <!-- MAP -->
-                <div class="col-sm-3 portfolio-item">
-                    <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
-                    <!--<div class="caption">
-                            <div class="caption-content">
-                                <i class="fa fa-search-plus fa-3x"></i>
-                            </div>
-                        </div>-->
-                    <h3>
-                        <center>Map</center>
-                    </h3>
-                    <center>
-                        <img id="maps" src="img/map1.png" height=7 5% width=7 5% class="img2 img-responsive" alt="">
-                    </center>
-                    </a>
-                </div>
-                <!-- End MAP -->
-
-                <div class="row">
-                </div>
+            <div class="row">
+                <center>
+                    <h3>iOS APPS</h3>
+                </center>
             </div>
+            <!-- HUG -->
+            <div class="col-sm-3 portfolio-item">
+                <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
+                <!--<div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>-->
+                <h3>
+                    <center>HUG</center>
+                </h3>
+                <center>
+                    <img id="imgs" src="img/HUG1.png" height= "75%" width= "75%" class="img-responsive" alt="">
+                </center>
+                </a>
+            </div>
+            <!-- End HUG -->
+
+            <!-- FantasyFootball -->
+            <div class="col-sm-3 portfolio-item">
+                <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
+                <!--<div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>-->
+                <h3>
+                    <center>Team Football</center>
+                </h3>
+                <center>
+                    <img id="footballs" src="img/football1.png" height= "75%" width= "75%" class="img-responsive" alt="">
+                </center>
+                </a>
+            </div>
+            <!-- End FantasyFootball -->
+
+            <!-- RadioBristol -->
+            <div class="col-sm-3 portfolio-item">
+                <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
+                <!--<div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>-->
+                <h3>
+                    <center>Radio Bristol</center>
+                </h3>
+                <center>
+                    <img id="radios" src="img/radio1.png" height= "75%" width= "75%" class="img-responsive" alt="">
+                </center>
+                </a>
+            </div>
+            <!-- End RadioBristol -->
+
+            <!-- MAP -->
+            <div class="col-sm-3 portfolio-item">
+                <!--<a href="#portfolioModal6" class="portfolio-link" data-toggle="modal">-->
+                <!--<div class="caption">
+                            <div class="caption-content">
+                                <i class="fa fa-search-plus fa-3x"></i>
+                            </div>
+                        </div>-->
+                <h3>
+                    <center>Map</center>
+                </h3>
+                <center>
+                    <img id="maps" src="img/map1.png" height= "75%" width= "75%" class="img-responsive" alt="">
+                </center>
+                </a>
+            </div>
+            <!-- End MAP -->
+
+            <div class="row">
+            </div>
+        </div>
         </div>
     </section>
 
@@ -507,28 +530,28 @@
                     <p>Many years of experience in Team Management, Mentorship, and Admim Consulting</p>
                 </div>
             </div>
-            </br>
-            </br>
-            <div class="row">
+
+            <!--<div class="row">
                 <div class="col-lg-12 text-center">
                     <h2>Co-worker's Speak</h2>
                     <hr class="star-light">
                 </div>
             </div>
+            
             <div class="row">
                 <div class="col-lg-2">
                 </div>
                 <div class="col-lg-8">
                     <center>
                         <img id="img1" src="img/andrew.png" width="80%" height="50%" alt="">
-                    </center>
+                    </center>-->
                     <!--<button type="button" onclick="displayPreviousImage()">Previous</button>
                     <button type="button" onclick="displayNextImage()">Next</button>-->
-                </div>
+                <!--</div>
                 <div class="col-lg-4">
                 </div>
 
-            </div>
+            </div>-->
 
         </div>
     </section>

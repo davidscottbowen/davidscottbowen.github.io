@@ -1,3 +1,4 @@
+/*Calendar Style Start*/
 .boxed {
     max-width: 100%;
     height: 30px;
@@ -14,17 +15,43 @@
 }
 .daybox {
     max-width: 100%;
-    height: 50px;
+    height: 45px;
     border: 1px solid blue;
     font-weight: bold;
 }
 .center {
     text-align: center;
 }
-
 .today {
     color: red;
     background-color: aqua;
 }
+/*Calendar Style End*/
 
+
+/*Weatherly Style Start*/
+.onecard{
+    position:relative;
+    max-width: 100%;
+    margin: 0px 0px 0px 20px;
+    border-radius: 25px;
+    border-top-right-radius: 25px;
+    background-position: center top;
+    height: 350px;
+    /*padding: 15px;*/
+    /*color: white;*/
+    /*box-shadow: 0 0 30px black;*/
+    background-color: lightslategray;
+}
+.temp{
+    text-align: center;
+    font-size: 300%;
+}
+.zipform {
+  position:absolute;
+  bottom:0;
+  padding: 1px;
+  color: black;
+}
+/*Weatherly Style Stop*/
 
