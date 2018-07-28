@@ -1,3 +1,13 @@
+.imagespin {
+    overflow: hidden;
+    transition-duration: 0.8s;
+    transition-property: transform;
+}
+.imagespin:hover {
+    transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+}
+
 /*Calendar Style Start*/
 .calendarcard {
     position:relative;
