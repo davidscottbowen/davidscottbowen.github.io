@@ -13,104 +13,60 @@
 
 <body>
 
-  <h1>
-    <center>Maply</center>
-  </h1>
-
-
-  <div class="container">
-
-    <div class="row">
-     
-      <!--card 1-->
-      <div id="map" class="col-sm-3 onecard" >
-       
-        <h3 class="top">
-          <center>Maply</center>
-        </h3>
-        <br />
-
-        <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>
-        
-        <p id="here"></p>
-
-        <form>
-          <input type="text" placeholder="Location" id="zip">
-          <button type="button" id="add">Submit</button>
-          <button type="button" id="another" class="btn btn-default btn-xs">
-          <span class="glyphicon glyphicon-plus"></span>
-        </button>
-        </form>
-      </div>
-
-      <!--card 2-->
-      <div id="map1" class="col-sm-3 col-sm-offset-1 onecard">
-        <h3 class="top">Maply </h3>
-
-        <br />
-
-
-
-        <h5 id="max2"></h5>
-        <form>
-          <input type="text" placeholder="Location" id="zip2">
-          <button type="button" id="add2">Submit</button>
-          <button type="button" id="another3" class="btn btn-default btn-xs">
-                       <span class="glyphicon glyphicon-plus"></span>
-                    </button>
-          <button type="button" id="minus2" class="btn btn-default btn-xs">
-                       <span class="glyphicon glyphicon-minus"></span>
-                   </button>
-        </form>
-      </div>
-
-      <!--card 3-->
-      <div id="map2" class="col-sm-3 col-sm-offset-1 onecard">
-        <h3 class="top">Maply</h3>
-
-        <br />
-
-
-        <form>
-          <input type="text" placeholder="Location" id="zip3">
-          <button type="button" id="add3">Submit</button>
-          <button type="button" class="btn btn-default btn-xs">
-          <span class="glyphicon glyphicon-plus"></span>
-        </button>
-          <button type="button" id="minus3" class="btn btn-default btn-xs">
-          <span class="glyphicon glyphicon-minus"></span>
-        </button>
-        </form>
-      </div>
-
-
-
+  <div class="row">
+    <div class="col-sm-4" style="width:400px;height:400px;background:white"></div>
+    <div id="map" class="col-sm-4" style="width:400px;height:400px;background:white"></div>
+    <div class="col-sm-4">
+        <input type="zipcode" id="zipcode" placeholder="Zipcode"/> 
+        <br/>
+        <button onclick="locate()">Locate</button>
+      
+        <!-- <a href="" onclick="return false;" class="btn btn-info">David's Location</a>
+        <br>
+        <br>
+        <a href="" onclick="return false;" class="btn btn-info">Your Location</a> -->
     </div>
+  </div>
+
+  <script>
+    function myMap() {
+        var myLatLng = {lat: 37.833244, lng: -82.810198};
+
+        var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 10,
+          center: myLatLng
+        });
+
+        var marker = new google.maps.Marker({
+          position: myLatLng,
+          map: map,
+          title: 'My Home Town'
+        });
+      }
+  </script>
+
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAk74wIX2nRH68IpLh1mduSht7zMmEhpE&callback=myMap"></script>
+
+</body>
+
+</html>
 
 
 
 
 
 
-    <!--
-  <div id="map" style="width:50%;height:300px"></div>
 
-  <form>
-    <input type="text" placeholder="Zip Code" id="zip">
-    <button type="button" id="add">Submit</button>
-  </form>
 
-  <script src="https://maps.googleapis.com/maps/api/js?callback=myMap"></script>-->
-
-    <!-- Official JQuery -->
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <!-- Official Bootstrap -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-      crossorigin="anonymous"></script>
-    <!-- Our project JS -->
-    <script src="maply.js"></script>
-    <!--callback=myMap-->
+<!-- Official JQuery -->
+<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+<!-- Official Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+  crossorigin="anonymous"></script>
+<!-- Our project JS -->
+<script src="maply.js"></script>
+<!--callback=myMap-->
 
 </body>
 
