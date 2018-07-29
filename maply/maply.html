@@ -14,35 +14,62 @@
 <body>
 
   <div class="row">
-    <div class="col-sm-4" style="width:400px;height:400px;background:white"></div>
+    <div id="world" class="col-sm-4" style="width:400px;height:400px;background: white"></div>
+    <div id="state" class="col-sm-4" style="width:400px;height:400px;background: white"></div>
     <div id="map" class="col-sm-4" style="width:400px;height:400px;background:white"></div>
+  </div>
+  </br>
+  <div class="row">
     <div class="col-sm-4">
-        <input type="zipcode" id="zipcode" placeholder="Zipcode"/> 
-        <br/>
-        <button onclick="locate()">Locate</button>
-      
-        <!-- <a href="" onclick="return false;" class="btn btn-info">David's Location</a>
-        <br>
-        <br>
-        <a href="" onclick="return false;" class="btn btn-info">Your Location</a> -->
     </div>
+    <div class="col-sm-4">
+      <input type="zipcode" id="zipcode" placeholder="Zipcode" />
+      <br/>
+      <button onclick="locate()">Locate</button>
+    </div>
+    <div class="col-sm-4">
+    </div>
+  </div>
   </div>
 
   <script>
     function myMap() {
-        var myLatLng = {lat: 37.833244, lng: -82.810198};
+      var myLatLng = { lat: 37.833244, lng: -82.810198 };
 
-        var map = new google.maps.Map(document.getElementById('map'), {
-          zoom: 10,
-          center: myLatLng
-        });
+      var map = new google.maps.Map(document.getElementById('map'), {
+        zoom: 10,
+        center: myLatLng
+      });
 
-        var marker = new google.maps.Marker({
-          position: myLatLng,
-          map: map,
-          title: 'My Home Town'
-        });
-      }
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        title: 'My Home Town'
+      });
+
+      var worldMap = new google.maps.Map(document.getElementById('world'), {
+        zoom: 1,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: worldMap,
+        title: 'My Home Town'
+      });
+
+      var stateMap = new google.maps.Map(document.getElementById('state'), {
+        zoom: 3,
+        center: myLatLng
+      });
+
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: stateMap,
+        title: 'My Home Town'
+      });
+    }
+
   </script>
 
   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAk74wIX2nRH68IpLh1mduSht7zMmEhpE&callback=myMap"></script>

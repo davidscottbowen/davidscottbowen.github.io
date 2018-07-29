@@ -16,7 +16,29 @@ function locate() {
                   var marker = new google.maps.Marker({
                     position: myLatLng,
                     map: map,
-                    title: 'My Home Town'
+                    title: ''
+                  });
+
+                  var worldMap = new google.maps.Map(document.getElementById('world'), {
+                    zoom: 1,
+                    center: myLatLng
+                  });
+          
+                  var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: worldMap,
+                    title: ''
+                  });
+
+                  var stateMap = new google.maps.Map(document.getElementById('state'), {
+                    zoom: 3,
+                    center: myLatLng
+                  });
+            
+                  var marker = new google.maps.Marker({
+                    position: myLatLng,
+                    map: stateMap,
+                    title: ''
                   });
               } else {
                   alert("Request failed.")
